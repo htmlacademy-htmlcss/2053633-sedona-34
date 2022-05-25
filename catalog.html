@@ -44,11 +44,80 @@
          </ul>
         </nav>
       </header>
-      <main>
-          <header>
-
+      <main class="main-inner">
+          <header class="inner-header">
+              <h1 class="inner-header-title">Гостиницы Седоны</h1>
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="index.html">
+                    <img class="logo-main-page" src="#" alt="Переход на главную страницу">
+                  </a>
+                </li>
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link">Каталог</a>
+                </li>
+              </ul>  
           </header>
-
+          <section class="selection-block">
+              <div class="infrastuctur-item">
+              <h2>Инфраструктура:</h2>
+              <form class="selection-form" action="https://echo.htmlacademy.ru/" method="post">
+            <ul class="infrastuctur-filter-list">
+            <li class="infrastuctur-filter-item"><input type="checkbox" name="pool" value="Бассейн" id="checkbox-pool" checked>
+            <label for="checkbox-pool">Бассейн</label>
+             </li>
+             <li class="infrastuctur-filter-item"><input type="checkbox" name="parking" value="Парковка" id="checkbox-parking" checked>
+            <label for="checkbox-parking">Парковка</label>
+        </li>
+        <li class="infrastuctur-filter-item"> <input type="checkbox" name="Wi-Fi" value="Wi-Fi" id="checkbox-wi-Fi">
+            <label for="checkbox-wi-Fi">Wi-Fi</label>
+        </li>
+            </ul>
+            </div>
+            <div class="housetype-item">
+                <h2>Тип жилья:</h2>
+                <ul class="housetype-filter-list">
+                    <li class="housetype-filter-item"><input type="radio" name="housetype-radio" value="hostel" id="radio-hostel" checked>
+                    <label for="radio-hostel">Гостиница</label>
+                     </li>
+                     <li class="housetype-filter-item"><input type="radio" name="housetype-radio" value="parking" id="radio-motel">
+                    <label for="radio-motel">Мотель</label>
+                </li>
+                <li class="housetype-filter-item"> <input type="radio" name="housetype-radio" value="apartament" id="radio-apartament">
+                    <label for="radio-apartament">Апартаменты</label>
+                </li>
+                    </ul>
+                 </div>
+                 <div class="cost-filter">
+                 <h2>Стоимость, ₽:</h2>
+                 <div class="cost-control">
+                    <label class="cost-from">От <input type="text" name="from" value="0" id="from-value"></label>
+                    <label class="cost-to">До <input type="text" name="to" value="9000" id="to-value"></label>
+                    <label class="cost-field" for="cost-range"></label>
+                    <input class="coste-range" type="range" id="cost-range" name="cost-range" min="0" max="100">
+                  </div>
+                </div>
+                <button class="button-select" type="submit">Применить</button>
+                <button class="button-deletе" type="submit">Сбросить</button>
+                </form>
+                <h2>Найдено гостиниц: 38</h2>
+                <select class="select-control" aria-label="Сортировка">
+                    <option value="cheap">Сначала дешёвое</option>
+                    <option value="popular">Сначала популярное</option>
+                    <option value="expensive">Сначала дорогое</option>
+                  </select>
+                  <a href="#" class="button button-light">
+                    <span class="visually-hidden">Показать карточки</span>
+                  </a>
+                  <a class="button" href="#">
+                    <span class="visually-hidden">Показать слайдшоув</span>
+                  </a>
+                  <a class="button" href="#">
+                    <span class="visually-hidden">Показать список</span>
+                  </a>
+                
+                </select>
+            </section>
         <section class="subscribe">
             <h2>Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
